@@ -79,14 +79,14 @@ header {
     height: 15px;
     width: 1000px;
     max-width: 80%;
-    background-image: url(../public/images/hr-img.png);
+    background-image: url(/public/images/hr-img.png);
 }
 
 .hidden-2 {
     display: block;
     font-size: 1px;
     height: 15px;
-    background-image: url(../public/images/hr-img.png);
+    background-image: url(/public/images/hr-img.png);
 }
 
 section {
@@ -133,7 +133,7 @@ h1 {
 .recipe {
     display: flex;
     justify-content: space-around;
-    background-image: url(../public/images/list-bg.png);
+    background-image: url(/public/images/list-bg.png);
     height: 305px;
     width: 100%;
 }
