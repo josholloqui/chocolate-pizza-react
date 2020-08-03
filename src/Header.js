@@ -5,7 +5,7 @@ class Logo extends React.Component {
         return (
         <div className="logo">
             <div>
-                <img className="logo-pic" src="../public/images/logo.png" alt="choco logo"/>
+                <img className="logo-pic" src="images/logo.png" alt="choco logo"/>
             </div>
             <div className="brand">
                 <h2 className="logo-font">Delicious</h2>
@@ -20,16 +20,16 @@ class Nav extends React.Component {
         return (
             <nav className="social">
                 <div>
-                    <img className="icons" src="../public/images/fb-icon.png" alt="icon"/>
-                    <img className="icons" src="../public/images/twit-icon.png" alt="icon"/>
-                    <img className="icons" src="../public/images/gp-icon.png" alt="icon"/>
-                    <img className="icons" src="../public/images/insta-icon.png" alt="icon"/>
-                    <img className="icons" src="../public/images/flic-icon.png" alt="icon"/>
-                    <img className="icons" src="../public/images/pint-icon.png" alt="icon"/>
+                    <img className="icons" src="images/fb-icon.png" alt="icon"/>
+                    <img className="icons" src="images/twit-icon.png" alt="icon"/>
+                    <img className="icons" src="images/gp-icon.png" alt="icon"/>
+                    <img className="icons" src="images/insta-icon.png" alt="icon"/>
+                    <img className="icons" src="images/flic-icon.png" alt="icon"/>
+                    <img className="icons" src="images/pint-icon.png" alt="icon"/>
                 </div>
                 <div>
-                    <img className="icons" src="../public/images/rss-icon.png" alt="icon"/>
-                    <img className="icons" src="../public/images/mail-icon.png" alt="icon"/>
+                    <img className="icons" src="images/rss-icon.png" alt="icon"/>
+                    <img className="icons" src="images/mail-icon.png" alt="icon"/>
                 </div>
             </nav>
             );
