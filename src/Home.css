@@ -1,0 +1,197 @@
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1);
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Lora', serif;
+    background-color: white;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    max-width: 80%;
+    padding-bottom: 15px;
+    padding-top: 40px;
+}
+
+.logo-pic {
+    height: 60px;
+    width: 60px;
+}
+.brand {
+    padding-left: 5px;
+}
+
+
+
+.logo-font {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.under-logo {
+    font-size: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    height: 24px;
+    width: 24px;
+}
+
+.social{
+    display: grid;
+    grid-template-columns: 2fr .73fr;
+    justify-items: end;
+    padding-top: 50px;
+}
+
+.hidden {
+    display: block;
+    font-size: 1px;
+    height: 15px;
+    width: 1000px;
+    max-width: 80%;
+    background-image: url(../public/images/hr-img.png);
+}
+
+.hidden-2 {
+    display: block;
+    font-size: 1px;
+    height: 15px;
+    background-image: url(../public/images/hr-img.png);
+}
+
+section {
+    display: grid;
+    grid-template-rows: .5fr 3fr 1.5fr 2fr .5fr 1fr ;
+    width: 1000px;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    font-size: 13px;
+    color: lightslategray;
+}
+
+.pizza {
+    height: 100%;
+    width: 100%;
+}
+
+.main-font {
+    font-size: 18px;
+    padding-top: 30px;
+    color:#7a7c77;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../public/images/list-bg.png);
+    height: 305px;
+    width: 100%;
+}
+
+ul {
+    padding-top: 38px;
+}
+
+li {
+    font-family: 'Dekko', cursive;
+    height: 35px;
+    font-size: 22px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    opacity: .4;
+}
+
+.author {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    padding-bottom: 130px;
+    color:#7a7c77;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    background-color: sienna;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gutter-right {
+    margin-right: 20px;
+}
+
+content {
+    width: 80%;
+}
+  
+footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: lightgrey;
+}
+
+.mini-logo {
+    height: 35px;
+    width: 35px;
+}
