@@ -1,3 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     --color1: hsla(349, 69%, 76%, 1);
@@ -79,14 +113,14 @@ header {
     height: 15px;
     width: 1000px;
     max-width: 80%;
-    background-image: url(/public/images/hr-img.png);
+    background-image: url("/images/hr-img.png");
 }
 
 .hidden-2 {
     display: block;
     font-size: 1px;
     height: 15px;
-    background-image: url(/public/images/hr-img.png);
+    background-image: url("/images/hr-img.png");
 }
 
 section {
@@ -133,7 +167,7 @@ h1 {
 .recipe {
     display: flex;
     justify-content: space-around;
-    background-image: url(/public/images/list-bg.png);
+    background-image: url("/images/list-bg.png");
     height: 305px;
     width: 100%;
 }
