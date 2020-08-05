@@ -8,7 +8,7 @@ class Logo extends React.Component {
                 <img className="logo-pic" src="images/logo.png" alt="choco logo"/>
             </div>
             <div className="brand">
-                <h2 className="logo-font">Delicious</h2>
+                <h2 className="logo-font">{this.props.logo}</h2>
                 <p className="under-logo">THE BEST FOOD BLOG ON THE WEB</p>
             </div>
         </div>);
@@ -40,7 +40,7 @@ class Header extends React.Component {
     render() { 
         return (
             <header>
-                <Logo />
+                <Logo logo={this.props.logo}/>
                 <Nav />
             </header>
         );
