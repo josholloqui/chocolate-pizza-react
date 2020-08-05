@@ -6,11 +6,13 @@ import './Home.css';
 
 const logo = 'Delicious'
 
+const bio = `Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.`
+
 function App() {
   return (
     <body className="App">
       <Header logo={logo}/>
-      <Main />
+      <Main bio={bio}/>
       <Footer />
     </body>
   );

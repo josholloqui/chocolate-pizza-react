@@ -114,7 +114,7 @@ class RecipeContainer extends React.Component {
                     <div className="about-me">
                         <h4>Vanessa Stevenson</h4>
                         <p>
-                            Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.
+                            {this.props.bio}
                         </p>
                     </div>
                     <button id="share-button">SHARE RECIPE</button>
@@ -128,7 +128,7 @@ class Main extends React.Component {
         return (
             <main>
                 <Hidden />
-                <RecipeContainer paragraph1={paragraph1} paragraph2={paragraph2} paragraph3={paragraph3} />
+                <RecipeContainer paragraph1={paragraph1} paragraph2={paragraph2} paragraph3={paragraph3} bio={this.props.bio}/>
             </main>
         )
     }
