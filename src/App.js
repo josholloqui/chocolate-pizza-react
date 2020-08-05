@@ -4,10 +4,12 @@ import Main from './Main.js';
 import Footer from './Footer.js';
 import './Home.css';
 
+const logo = 'Delicious'
+
 function App() {
   return (
     <body className="App">
-      <Header />
+      <Header logo={logo}/>
       <Main />
       <Footer />
     </body>
