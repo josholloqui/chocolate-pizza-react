@@ -1,4 +1,5 @@
 import React from 'react';
+import { ingredients1, ingredients2 } from './data.js';
 
 class Hidden extends React.Component {
     render() {
@@ -49,62 +50,7 @@ class RecipeContainer extends React.Component {
                 </p>
              
                 <div className="recipe">
-                    <div className="ingredients-1">
-                        <ul>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1 1/2 cups milk</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1/2 cup mascarpone</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1/2 tsp pink salt</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1 lb Black Hission Figs</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1/2 cup brown sugar</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 2-4 tbsp of water</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="ingredients-2">
-                        <ul>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1 1/2 cups heavy cream</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1/3 cup granulated sugar</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 2 egg yolks</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1 lemon, juiced</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 2 tbsp butter</label>
-                            </li>
-                            <li>
-                                <input type="checkbox"/>
-                                <label> 1 cup honey roasted pecans, roughly chopped</label>
-                            </li>
-                        </ul>
-                    </div>
+                    <RecipeItems />
                 </div>
                 <div className="hidden-2">
                     Hidden
@@ -120,6 +66,25 @@ class RecipeContainer extends React.Component {
                     <button id="share-button">SHARE RECIPE</button>
                 </div>
             </section>);
+    }
+}
+
+class RecipeItems extends React.Component {
+    render() {
+        return (
+            <>
+                <div className="ingredients1">
+                    <ul>
+                        {ingredients1.map(ingredient1 => <li>{ingredient1}</li>)}
+                    </ul>
+                </div>
+                <div className="ingredients2">
+                    <ul>
+                    {ingredients2.map(ingredient2 => <li>{ingredient2}</li>)}
+                    </ul>
+                </div>
+            </>
+        )
     }
 }
 
